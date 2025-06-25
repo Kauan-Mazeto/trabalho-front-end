@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <center>
+            <h1>
+                Perfil Profissional
+            </h1>
+        </center>
+    </div>
+
+    <div>
+        <center>
+            <img src="https://avatars.githubusercontent.com/u/113885626?v=4" alt="Kauan Mazeto" width="200px"
+                height="200px">
+        </center>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Infomações Pessoais</legend>
+            <form action="perfil.html" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" value="Kauan Mazeto">
+                <br /><br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="kauan.mazetorodrigues@gmail.com">
+                <br /><br />
+                <label for="idiomas">Idiomas:</label>
+                <input type="text" id="idiomas" name="idiomas" value="Português, Espanhol">
+                <br /><br />
+                <label for="idade">Dta de Nascimento:</label>
+                <input type="date" id="idade" name="idade" value="2004-01-01">
+                <br /><br />
+                <label for="arquivo">Adicionar Currículo:</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx">
+                <br>
+                <label for="deficiencia">Possue alguma deficiência:</label>
+                <input type="radio" id="deficiencia-sim" name="deficiencia-sim" value="sim">
+                <label for="deficiencia-sim">Sim</label>
+                <input type="radio" id="deficiencia-nao" name="deficiencia-nao" value="nao">
+                <label for="deficiencia-nao">Não</label>
+            </form>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <label>Habilidades:</label><br>
+            <input type="checkbox" id="html" name="habilidades" value="HTML" checked>
+            <label for="html">HTML</label>
+            <br />
+            <input type="checkbox" id="css" name="habilidades" value="CSS" checked>
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="js" name="habilidades" value="JavaScript" checked>
+            <label for="js">JavaScript</label>
+            <br />
+            <input type="checkbox" id="python" name="habilidades" value="Python" checked>
+            <label for="python">Python</label>
+            <br />
+            <input type="checkbox" id="ts" name="habilidades" value="ts" checked>
+            <label for="ts">Type Script</label>
+            <br />
+            <input type="checkbox" id="edição" name="habilidades" value="edição" checked>
+            <label for="edição">Edição</label>
+            <br />
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Descrição</legend>
+            <fieldset>
+                <legend>Pessoal</legend>
+                <textarea name="pessoal" id="pessoal" rows="7"
+                    cols="60" required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis eaque veniam illum temporibus aliquam optio mollitia. Cum commodi saepe itaque labore est doloribus amet, fugit error ab, soluta perspiciatis!</textarea>
+                <br />
+                <button type="submit">Salvar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Profissional</legend>
+                <textarea name="profissional" id="profissional" rows="7"
+                    cols="60" required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi aperiam ducimus similique? Error quo excepturi sapiente? Magni, doloribus rerum fugiat dolore necessitatibus, magnam repellat tempore, quis molestias delectus voluptate.</textarea>
+                <br />
+                <button type="submit">Salvar</button>
+            </fieldset>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Escolaridade</legend>
+            <form action="perfil.html" method="post">
+                <fieldset>
+                    <label for="escolaridade">Escolaridade:</label>
+                    <select id="escolaridade" name="escolaridade">
+                        <option value="ensino-medio">Ensino Médio</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="superior">Superior</option>
+                        <option value="pos-graduacao">Pós-Graduação</option>
+                    </select>
+                    <br /><br />
+                    <label for="instituicao">Instituição:</label>
+                    <input type="text" id="instituicao" name="instituicao" value="Leonardo da Vinci">
+                </fieldset>
+                <br />
+                <fieldset>
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" name="curso" value="Aprender e Crescer">
+                    <br /><br />
+                    <label for="ano-conclusao">Ano de Conclusão:</label>
+                    <input type="number" id="ano-conclusao" name="ano-conclusao" min="1900" max="2100">
+                    <br /><br />
+                    <label for="">Já concluido:</label> <br />
+                    <input type="checkbox" id="sim" name="sim" value="sim">
+                    <label for="sim">sim</label>
+                    <br />
+                    <input type="checkbox" id="nao" name="nao" value="nao" checked>
+                    <label for="nao">não</label>
+                </fieldset>
+                <br />
+                <button type="submit">Salvar</button>
+            </form>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Redes</legend>
+            <table border="1">
+                <tr>
+                    <th rowspan="7">Redes Sociais</th>
+                    <td>Profissinal</td>
+                    <td>Link</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/KauanMazeto"
+                            target="_blank">linkedin.com/in/KauanMazeto</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a href="https://github.com/Kauan-Mazeto" target="_blank">github.com/Kauan-Mazeto</a></td>
+                </tr>
+                <tr>
+                    <td>Pessoal</td>
+                    <td>Link</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td><a href="https://instagram.com/mm.mazwto" target="_blank">instagram.com/mm.mazwto</a></td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td><a href="https://facebook.com/KauanMazeto" target="_blank">facebook.com/KauanMazeto</a></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
